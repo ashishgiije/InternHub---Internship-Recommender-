@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Internships - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="admin-home.html">Admin Dashboard</a>
+            <a class="active" href="admin-internships.html">Internships</a>
+            <a href="admin-applications.html">Applications</a>
+            <a href="#" id="adminLogoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a href="admin-home.html">Dashboard</a>
+        <a class="active" href="admin-internships.html">Manage Internships</a>
+        <a href="admin-applications.html">User Applications</a>
+    </div>
+    <section class="card">
+        <h1 class="section-title">Manage Internships</h1>
+        <form id="internshipForm">
+            <input id="internshipId" type="hidden">
+            <label for="title">Internship Title</label>
+            <input id="title" type="text" required>
+            <label for="company">Company Name</label>
+            <input id="company" type="text" required>
+            <label for="skills">Required Skills (comma-separated)</label>
+            <input id="skills" type="text" required>
+            <label for="category">Category</label>
+            <input id="category" type="text" placeholder="Backend, Frontend, Data..." required>
+            <label for="applyLink">Apply Link</label>
+            <input id="applyLink" type="url" required>
+            <button type="submit">Save Internship</button>
+        </form>
+        <p id="adminMessage" class="success"></p>
+        <p id="adminError" class="error"></p>
+    </section>
+    <section class="card table-wrap">
+        <h2 class="section-title">All Internships</h2>
+        <div class="grid grid-2">
+            <input id="adminSearchInput" type="text" placeholder="Search internships...">
+            <select id="adminCategoryFilter">
+                <option value="">All Categories</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Skills</th>
+                <th>Category</th>
+                <th>Apply Link</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </section>
+</div>
+<script src="js/admin-common.js"></script>
+<script src="js/admin-internships.js"></script>
+</body>
+</html>

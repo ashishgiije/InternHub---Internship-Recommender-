@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Applications - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="admin-home.html">Admin Dashboard</a>
+            <a href="admin-internships.html">Internships</a>
+            <a class="active" href="admin-applications.html">Applications</a>
+            <a href="#" id="adminLogoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a href="admin-home.html">Dashboard</a>
+        <a href="admin-internships.html">Manage Internships</a>
+        <a class="active" href="admin-applications.html">User Applications</a>
+    </div>
+    <section class="card table-wrap">
+        <h1 class="section-title">User Internship Applications</h1>
+        <p id="applicationError" class="error"></p>
+        <table>
+            <thead>
+            <tr>
+                <th>User</th>
+                <th>Email</th>
+                <th>Internship</th>
+                <th>Company</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Applied At</th>
+                <th>Update</th>
+            </tr>
+            </thead>
+            <tbody id="applicationTableBody"></tbody>
+        </table>
+    </section>
+</div>
+<script src="js/admin-common.js"></script>
+<script src="js/admin-applications.js"></script>
+</body>
+</html>

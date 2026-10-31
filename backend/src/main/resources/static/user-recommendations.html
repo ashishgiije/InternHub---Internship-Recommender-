@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="user-dashboard.html">Dashboard</a>
+            <a href="user-profile.html">Profile</a>
+            <a class="active" href="user-recommendations.html">Recommendations</a>
+            <a href="user-applications.html">Applied Internships</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a href="user-dashboard.html">Dashboard</a>
+        <a href="user-profile.html">Profile</a>
+        <a class="active" href="user-recommendations.html">Recommendations</a>
+        <a href="user-applications.html">Applied Internships</a>
+    </div>
+    <section class="card">
+        <h1 class="section-title">Recommended Internships</h1>
+        <div class="grid grid-2">
+            <div>
+                <label for="searchInput">Search Internships</label>
+                <input id="searchInput" type="text" placeholder="Search by title, skills, company">
+            </div>
+            <div>
+                <label for="categoryFilter">Category</label>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+        </div>
+        <button id="refreshRecommendations" type="button">Refresh Recommendations</button>
+        <p id="recommendationError" class="error"></p>
+        <div id="suggestedSkills"></div>
+    </section>
+    <section class="card">
+        <h2 class="section-title">All Internships by Category</h2>
+        <div id="allInternshipsContainer" class="recommendation-grid"></div>
+    </section>
+    <section id="recommendationContainer" class="recommendation-grid"></section>
+</div>
+<script src="js/user-common.js"></script>
+<script src="js/user-recommendations.js"></script>
+</body>
+</html>

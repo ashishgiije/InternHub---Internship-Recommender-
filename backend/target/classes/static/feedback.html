@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="feedback.html">Feedback</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <section class="card">
+        <h1 class="section-title">Share Feedback</h1>
+        <form id="feedbackForm">
+            <label for="name">Name</label>
+            <input id="name" type="text" required>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+            <label for="message">Feedback</label>
+            <textarea id="message" rows="5" required></textarea>
+            <button type="submit">Submit Feedback</button>
+            <p id="feedbackSuccess" class="success"></p>
+        </form>
+    </section>
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>InternHub Pro - Internship Recommender Platform</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+</footer>
+<script src="js/feedback.js"></script>
+</body>
+</html>

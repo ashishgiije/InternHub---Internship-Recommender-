@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a class="active" href="user-dashboard.html">Dashboard</a>
+            <a href="user-profile.html">Profile</a>
+            <a href="user-recommendations.html">Recommendations</a>
+            <a href="user-applications.html">Applied Internships</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a class="active" href="user-dashboard.html">Dashboard</a>
+        <a href="user-profile.html">Profile</a>
+        <a href="user-recommendations.html">Recommendations</a>
+        <a href="user-applications.html">Applied Internships</a>
+    </div>
+    <section class="card">
+        <h1 id="welcomeTitle">Welcome</h1>
+        <p class="muted">Use task pages to complete profile, discover internships, and track applications.</p>
+    </section>
+    <section class="grid grid-3">
+        <article class="card stat-card">
+            <h3>Profile Completion</h3>
+            <p id="profileCompletion" class="stat-number">0%</p>
+        </article>
+        <article class="card stat-card">
+            <h3>Recommendations Found</h3>
+            <p id="recommendationCount" class="stat-number">0</p>
+        </article>
+        <article class="card stat-card">
+            <h3>Applied Internships</h3>
+            <p id="applicationCount" class="stat-number">0</p>
+        </article>
+    </section>
+</div>
+<script src="js/user-common.js"></script>
+<script src="js/user-dashboard.js"></script>
+</body>
+</html>

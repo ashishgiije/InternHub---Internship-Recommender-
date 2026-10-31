@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Internships - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="user-dashboard.html">Dashboard</a>
+            <a href="user-profile.html">Profile</a>
+            <a href="user-recommendations.html">Recommendations</a>
+            <a class="active" href="user-applications.html">Applied Internships</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a href="user-dashboard.html">Dashboard</a>
+        <a href="user-profile.html">Profile</a>
+        <a href="user-recommendations.html">Recommendations</a>
+        <a class="active" href="user-applications.html">Applied Internships</a>
+    </div>
+    <section class="card table-wrap">
+        <h1 class="section-title">Applied Internships</h1>
+        <p id="applicationsError" class="error"></p>
+        <table>
+            <thead>
+            <tr>
+                <th>Internship</th>
+                <th>Company</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Applied At</th>
+            </tr>
+            </thead>
+            <tbody id="applicationsTableBody"></tbody>
+        </table>
+    </section>
+</div>
+<script src="js/user-common.js"></script>
+<script src="js/user-applications.js"></script>
+</body>
+</html>

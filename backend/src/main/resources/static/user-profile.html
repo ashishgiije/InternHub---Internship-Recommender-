@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="user-dashboard.html">Dashboard</a>
+            <a class="active" href="user-profile.html">Profile</a>
+            <a href="user-recommendations.html">Recommendations</a>
+            <a href="user-applications.html">Applied Internships</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a href="user-dashboard.html">Dashboard</a>
+        <a class="active" href="user-profile.html">Profile</a>
+        <a href="user-recommendations.html">Recommendations</a>
+        <a href="user-applications.html">Applied Internships</a>
+    </div>
+    <section class="card">
+        <h1 class="section-title">Manage Profile</h1>
+        <form id="profileForm">
+            <label for="skills">Skills (comma-separated)</label>
+            <input id="skills" type="text" required>
+            <label for="interests">Interests (comma-separated)</label>
+            <input id="interests" type="text" required>
+            <label for="activities">Activities / Experience</label>
+            <textarea id="activities" rows="5" required></textarea>
+            <button type="submit">Save Profile</button>
+            <p id="profileMessage" class="success"></p>
+            <p id="profileError" class="error"></p>
+        </form>
+        <hr class="divider">
+        <h2 class="section-title">Upload CV for Auto Extraction</h2>
+        <form id="resumeForm">
+            <label for="resumeFile">Upload Resume (PDF or TXT)</label>
+            <input id="resumeFile" type="file" accept=".pdf,.txt" required>
+            <button type="submit" class="secondary">Extract from CV</button>
+            <p id="resumeMessage" class="success"></p>
+            <p id="resumeError" class="error"></p>
+        </form>
+    </section>
+</div>
+<script src="js/user-common.js"></script>
+<script src="js/user-profile.js"></script>
+</body>
+</html>

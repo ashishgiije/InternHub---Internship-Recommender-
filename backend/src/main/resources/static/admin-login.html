@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a class="active" href="admin-login.html">Admin Login</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="card">
+        <h1>Admin Login</h1>
+        <form id="adminLoginForm">
+            <label for="adminPass">Admin Unique Passcode</label>
+            <input id="adminPass" type="password" required>
+            <button type="submit">Login as Admin</button>
+            <p id="message" class="success"></p>
+            <p id="error" class="error"></p>
+        </form>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>InternHub Pro - Internship Recommender Platform</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+</footer>
+<script src="js/admin-login.js"></script>
+</body>
+</html>

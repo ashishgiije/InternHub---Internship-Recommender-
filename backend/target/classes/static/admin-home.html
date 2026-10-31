@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - InternHub Pro</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">InternHub Pro</a>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a class="active" href="admin-home.html">Admin Dashboard</a>
+            <a href="admin-internships.html">Internships</a>
+            <a href="admin-applications.html">Applications</a>
+            <a href="#" id="adminLogoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="taskbar">
+        <a class="active" href="admin-home.html">Dashboard</a>
+        <a href="admin-internships.html">Manage Internships</a>
+        <a href="admin-applications.html">User Applications</a>
+    </div>
+    <section class="card">
+        <h1 class="section-title">Admin Portal</h1>
+        <p class="muted">Manage internships and monitor all user applications using dedicated task pages.</p>
+    </section>
+    <section class="grid grid-2">
+        <article class="card">
+            <h3>Internship Management</h3>
+            <p class="muted">Create, update, and remove internships from the platform.</p>
+            <a class="button-link" href="admin-internships.html">Open Internships</a>
+        </article>
+        <article class="card">
+            <h3>User Application Tracking</h3>
+            <p class="muted">Review which user has applied to which internship and when.</p>
+            <a class="button-link" href="admin-applications.html">Open Applications</a>
+        </article>
+    </section>
+</div>
+<script src="js/admin-common.js"></script>
+</body>
+</html>
